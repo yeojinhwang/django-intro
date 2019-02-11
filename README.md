@@ -54,6 +54,12 @@ $ django-admin startproject 프로젝트이름
 
 따라서, 명령어가 안될 때에는 반드시 `pwd`와 `ls`를 통해 현재 bash(터미널) 위치를 확인하자!!
 
+1. 앱 만들기
+
+```bash
+$ python manage.py startapp 앱이름
+```
+
 
 
 ## 2. Hello, Django!
@@ -102,8 +108,11 @@ $ django-admin startproject 프로젝트이름
    ```
 
    - 주의할 점은 선언된 함수에서 `request`를 인자로 받아야 한다.
+
      - request는 사용자(클라이언트)의 요청 정보와 서버에 대한 정보가 담겨 있다.
+
      - Django 내부에서 해당 함수를 호출하면서 정보를 넘겨주기 때문에 반드시 명시해줘야 한다.
+
 
 ## 3. Template (MTV-T)
 
@@ -143,7 +152,9 @@ $ django-admin startproject 프로젝트이름
    <h1> {{menu}} </h1>
    ```
 
-![ImagefromiOS](image/Image from iOS-1549863593494.jpg)
+![ImagefromiOS](/image/Image from iOS-1549863593494.jpg)
+
+
 
 ## 4. Variable Routing
 
@@ -166,6 +177,8 @@ $ django-admin startproject 프로젝트이름
    ```django
    <h1> {{ name }}, 안녕!! </h1>
    ```
+
+
 
 ## 5. Form data
 
@@ -237,8 +250,4 @@ $ django-admin startproject 프로젝트이름
      - form을 통해 POST 요청을 보낸다는 것은 데이터베이스에 반영되는 경우가 대부분인데, 해당 요청을 우리가 만든 정해진 form에서 보내는지 검증하는 것이다.
      - 실제로 input type hidden으로 특정한 hash 값이 담겨 있는 것을 볼 수 있다.
      - `settings.py`에 `MIDDLEWARE` 설정을 보면 csrf 관련된 내용이 설정된 것을 볼 수 있다.
-
-
-
-
 
