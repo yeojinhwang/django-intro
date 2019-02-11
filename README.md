@@ -143,6 +143,9 @@ $ django-admin startproject 프로젝트이름
    <h1> {{menu}} </h1>
    ```
 
+
+![Image from iOS](image/Image from iOS-1549863593494.jpg)
+
 ## 4. Variable Routing
 
 1. url 설정
