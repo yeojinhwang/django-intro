@@ -23,3 +23,11 @@ def cube(request, num):
     result = num**3
     return render(request, 'cube.html', {'num':num, 'result':result})
     
+def ping(request):
+    return render(request, 'ping.html')
+    
+def pong(request):
+    print(request.GET)
+    msg = request.GET.get('material')
+    return render(request, 'pong.html', {'msg':msg})
+# def pong(request):
