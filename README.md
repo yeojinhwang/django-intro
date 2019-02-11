@@ -152,7 +152,7 @@ $ python manage.py startapp 앱이름
    <h1> {{menu}} </h1>
    ```
 
-![ImagefromiOS](/image/Image from iOS-1549863593494.jpg)
+![ImagefromiOS](/image/Image from iOS.jpg)
 
 
 
