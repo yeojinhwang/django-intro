@@ -143,24 +143,24 @@ $ django-admin startproject 프로젝트이름
    <h1> {{menu}} </h1>
    ```
 
-   ## 4. Variable Routing
+## 4. Variable Routing
 
-   1. url 설정
+1. url 설정
 
-      ```python
-      path('home/you/<name>/', views.you),
-      path('home/cube/<int:num>/', views.cube)
-      ```
+   ```python
+   path('home/you/<name>/', views.you),
+   path('home/cube/<int:num>/', views.cube)
+   ```
 
-   2. view 파일 설정
+2. view 파일 설정
 
-      ```python
-      def you(request, you):
-          return render(request, 'you.html', {'name':name})
-      ```
+   ```python
+   def you(request, you):
+       return render(request, 'you.html', {'name':name})
+   ```
 
-   3. 템플릿 파일 설정
+3. 템플릿 파일 설정
 
-      ```django
-      <h1> {{ name }}, 안녕!! </h1>
-      ```
+   ```django
+   <h1> {{ name }}, 안녕!! </h1>
+   ```
