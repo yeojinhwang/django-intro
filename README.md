@@ -138,7 +138,29 @@ $ django-admin startproject 프로젝트이름
    $ touch home/templates/dinner.html
    ```
 
-   ```html
+   ```django
    <!--home/templates/dinner.html-->
    <h1> {{menu}} </h1>
    ```
+
+   ## 4. Variable Routing
+
+   1. url 설정
+
+      ```python
+      path('home/you/<name>/', views.you),
+      path('home/cube/<int:num>/', views.cube)
+      ```
+
+   2. view 파일 설정
+
+      ```python
+      def you(request, you):
+          return render(request, 'you.html', {'name':name})
+      ```
+
+   3. 템플릿 파일 설정
+
+      ```django
+      <h1> {{ name }}, 안녕!! </h1>
+      ```
