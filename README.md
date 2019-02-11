@@ -144,7 +144,7 @@ $ django-admin startproject 프로젝트이름
    ```
 
 
-![ImagefromiOS](image/Image from iOS-1549863593494.jpg)
+![ImagefromiOS](/image/Image from iOS-1549863593494.jpg)
 
 ## 4. Variable Routing
 

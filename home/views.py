@@ -30,4 +30,11 @@ def pong(request):
     print(request.GET)
     msg = request.GET.get('material')
     return render(request, 'pong.html', {'msg':msg})
-# def pong(request):
+
+def user_new(request):
+    return render(request, 'user_new.html')
+    
+def user_read(request):
+    id = request.POST.get('id')
+    pwd = request.POST.get('pwd')
+    return render(request, 'user_read.html', {'id':id, 'pwd':pwd})
