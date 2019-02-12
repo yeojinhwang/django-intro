@@ -28,5 +28,6 @@ urlpatterns = [
     path('home/ping/', views.ping),
     path('home/pong/', views.pong),
     path('home/user_new/', views.user_new),
-    path('home/user_read/', views.user_read)
+    path('home/user_read/', views.user_read),
+    path('home/template_example/', views.template_example),
 ]
