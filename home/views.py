@@ -45,7 +45,12 @@ def template_example(request):
     my_list = ['짜장면', '짬뽕', '탕수육', '양장피']
     my_sentence = 'Life is short, you need python!'
     messages = ['apple', 'banana', 'cucumber', 'mango']
-    now = datetime.datetime.now()
+    datetimenow = datetime.datetime.now()
     empty_list = []
     return render(request, 'template_example.html', {'my_info': my_info, 'my_list': my_list, 
-    'my_sentence': my_sentence, 'messages': messages, 'now': now, 'empty_list': empty_list})
+    'my_sentence': my_sentence, 'messages': messages, 'datetimenow': datetimenow, 'empty_list': empty_list})
+    
+def static_example(request):
+    return render(request, 'static_example.html')
+    
+    
