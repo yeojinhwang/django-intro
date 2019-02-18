@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/utilities/ascii_make/" method="POST">
+        {% csrf_token %}
+        <input type="text", name="text">
+        <select name="selectedFont">
+            {% for font in fonts %}
+            <option value="{{ font }}">{{ font }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit">
+    </form>
+</body>
+</html>
